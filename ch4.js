@@ -34,3 +34,10 @@ function *odds(num) {
 }
 
 for(const o of odds(99)) console.log(o)
+
+
+console.log(...odds(99))
+
+const [head, ...tail] = odds(5)
+
+console.log(head, "/", tail)
